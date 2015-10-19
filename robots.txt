@@ -1,0 +1,2 @@
+User-agent: *
+https://www.impos.com.au/sitemap.xml

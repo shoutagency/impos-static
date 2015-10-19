@@ -1,0 +1,468 @@
+/* CSS RESET
+----------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0
+}
+
+iframe,a img,fieldset,form,table {
+	border: 0
+}
+
+h6,h5,h4,h3,h2,h1,caption,th,td {
+	font-size: 100%;
+}
+
+dd,dt,li,dl,ol,ul {
+	list-style: none
+}
+
+legend {
+	color: #000
+}
+
+button,select,textarea,input {
+	font: 10px verdana;
+	padding: 2px;
+}
+select {
+	padding: 1px;
+}
+select option.disabled{
+	font-weight: bold;
+	color: black;
+}
+
+table {
+	border-collapse: collapse
+}
+
+caption,th,td {
+	text-align: left
+}
+
+/* PNG FIX
+----------------------------------------------------*/
+img,div {
+	behavior: url(../scripts/iepngfix.htc);
+}
+
+/* GLOBAL
+----------------------------------------------------*/
+
+img {
+	border: 0px;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	padding: 5px;
+}
+dt {
+	float: left;
+	font-weight: bold;
+	color: #333333;
+}
+dd {
+	float: left;
+}
+
+/* CLEARFIX
+----------------------------------------------------*/
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/* TOOLTIPS
+----------------------------------------------------*/
+div.tooltipHolder {
+	width: 200px;
+	z-index:500;
+}
+
+div.tooltipHolderWide {
+	width: 300px;
+}
+
+div.tooltipHolder .tip-top {
+	background-position: top left;
+	background-image: url(../images/bubble-200.png);
+	height: 8px;
+}
+
+div.tooltipHolderWide .tip-top {
+	background-image: url(https://www.impos.com.au/media/images/bubble-300.png);
+}
+
+div.tooltipHolder .tip-bottom {
+	background-position: bottom right;
+	background-image: url(../images/bubble-200.png);
+	height: 8px;
+}
+
+div.tooltipHolderWide .tip-bottom {
+	background-image: url(https://www.impos.com.au/media/images/bubble-300.png);
+}
+
+div.tooltipHolder .tip {
+	background-position: 0px -8px;
+	background-image: url(../images/bubble-200.png);
+}
+
+div.tooltipHolderWide .tip {
+	background-image: url(https://www.impos.com.au/media/images/bubble-300.png);
+}
+
+div.tooltipHolder .tip .tip-title {
+	font-weight: bold; color : white;
+	padding: 0px 3px 0px 3px;
+	color: white;
+}
+
+div.tooltipHolder .tip .tip-text {
+	color: #DDD;
+	padding: 0px 3px 0px 3px;
+}
+
+.tool-tip {
+	color: #fff;
+	width: 139px;
+	z-index: 13000;
+}
+
+.tool-title {
+	font-size: 11px;
+	margin: 0;
+	font-weight: bold;
+	padding: 8px 8px 4px;
+}
+
+.tool-text {
+	font-size: 11px;
+	padding: 4px 8px 8px;
+}
+
+/* MULTISELECT
+----------------------------------------------------*/
+div.multiselect {
+	overflow:hidden;
+	background-image:url('../images/dd.png');
+	width:200px;
+	background-repeat:no-repeat;
+	background-position:right;
+	border: 1px solid #C4C4C4;
+	height: 12px;
+	padding: 2px;
+	background-color: white;
+}
+
+div.options {
+	border: 1px solid gray;
+	width:200px;
+	position:absolute;
+	background-color:white;
+	max-height: 400px;
+	overflow-y: auto;
+	z-index: 4000;
+}
+div.options label.optgroup {
+	font-weight: bold;
+	text-align: left;
+	padding: 1px;
+}
+div.options label.option {
+	text-align: left;
+	padding: 1px;
+}
+div.options label input{
+	margin-right: 2px;
+}
+
+div.options label.hover {
+	background-color: #3399ff;
+	color: white;
+}
+
+div.options label.selected {
+}
+
+/* POPUP
+----------------------------------------------------*/
+.popupContainer {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top: 0px;
+	left: 0px;
+	z-index:101;
+}
+.popupContainer table.popupTable {
+	width: 530px;
+	position: relative;
+}
+.popup-content {
+	background: #FFF;
+}
+.popup-title {
+	height: 20px;
+	background: #F5921F;
+	border: 1px solid #C17327;
+	font-size: 16px;
+	padding: 3px;
+}
+.popup-text {
+	height: 30px;
+	padding: 8px;
+}
+.popup-fluent {
+	padding: 8px;
+}
+.popup-fixed {
+	height: 400px;
+	padding: 8px;
+}
+.popup-topleft {
+	background: url(../images/popup-topleft.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.popup-topright {
+	background: url(../images/popup-topright.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.popup-bottomleft {
+	background: url(../images/popup-bottomleft.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.popup-bottomright {
+	background: url(../images/popup-bottomright.png) no-repeat;
+	width: 10px;
+	height: 10px;
+}
+.popup-border {
+	background-image: url(../images/popup-border.png);
+}
+
+.popupScroll {
+	max-height: 350px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+/* FORMS
+----------------------------------------------------*/
+.form {
+	font: 10px verdana;
+	color: #333333;
+	border: 1px solid #c4c4c4;
+}
+.form-input, select {
+	border: 1px solid #c4c4c4;
+}
+.form-input, select, select optgroup, select optgroup option {
+	font: 10px verdana;
+	color: #333333;
+}
+select optgroup {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+select optgroup option {
+  padding-left: 5px;
+}
+.form-input:focus, select:focus {
+	border: 1px solid #C17327;
+}
+.form-tiny {
+	width: 30px;
+}
+.form-small {
+	width: 60px;
+}
+
+.form-medium {
+	width: 200px;
+}
+
+.form-large {
+	width: 400px;
+}
+
+.form-textarea-small {
+	font: 10px verdana;
+	color: #333333;
+	width: 200px;
+	height: 80px;
+}
+
+.form-textarea-medium {
+	font: 10px verdana;
+	color: #333333;
+	width: 300px;
+	height: 100px;
+}
+
+.form-textarea-large {
+	font: 10px verdana;
+	color: #333333;
+	height: 300px;
+	width: 400px;
+}
+.form-textarea-code {
+	overflow: scroll;
+	font: 12px monospace;
+	width: 680px;
+	height: 400px;
+}
+
+.form-submit {
+	text-decoration: none;
+	background-color: #F5921F;
+	border-color: #DDD #333 #333 #DDD;
+	border-style: solid;
+	border-width: 1px;
+	color: #FFFFFF;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	padding: 2px 15px 3px;
+	text-align: center;
+}
+
+.form-cancel, .form-button {
+	background-color: #DDD;
+	border-color: #D9DFEA #0E1F5B #0E1F5B #D9DFEA;
+	border-style: solid;
+	border-width: 1px;
+	color: #000;
+	font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+	font-size: 11px;
+	padding: 2px 15px 3px;
+	text-align: center;
+}
+.timeSelect {
+	width: 43px;
+}
+
+fieldset {
+	padding: 2px;
+	margin-bottom: 20px;
+
+}
+fieldset.fieldset-main {
+	border: 1px solid #c4c4c4;
+	background-color: #F4F7F9;
+}
+fieldset.fieldset-nobackground {
+	background: none;
+}
+fieldset legend {
+	padding: 0 2px;
+	font-weight: bold;
+	font-size: 11px;
+}
+fieldset a {
+	font-weight: normal;
+	font-size: 10px;
+	color: #0392CE;
+}
+legend.legend-secondary {
+	margin-top: 20px;
+}
+.addEditTable tr td.fieldName {
+	min-width: 100px;
+	max-width: 150px;
+	vertical-align: top;
+	padding: 8px 3px 0px 10px;
+}
+.addEditTable tr td.fieldName em {
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.addEditTable tr td {
+	padding: 5px 0;
+}
+.fieldTable {
+	width: 100%;
+}
+.fieldTable tr td {
+	padding-right: 20px;
+}
+.revealerLink {
+	margin-bottom: 8px;
+}
+
+/* COLOURED TEXT
+----------------------------------------------------*/
+.orangeText {
+	color: #0392CE;
+	font: 10px verdana;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+
+.orangeText a, .blueText {
+	color: #0392CE;
+	font-weight: normal;
+}
+.blueText:hover {
+	color: #0392CE;
+}
+
+.redText {
+	color: #FF0000;
+	font: 10px verdana;
+	font-weight:bold;
+	margin-bottom: 10px;
+}
+
+/* AJAX LOADER
+----------------------------------------------------*/
+.ajaxLoading {
+	background-image: url(../images/ajax-loader.gif);
+	background-repeat: no-repeat;
+	background-position: center 40px;
+	min-height: 100px;
+}
+
+/* PAGINATION
+----------------------------------------------------*/
+.pagination {
+	float: right;
+	margin-bottom: 2px;
+}
+.pagination ul{
+	float: right;
+}
+.pagination li{
+	float:left;
+}
+.pagination a {
+	padding: 4px;
+	color: #999;
+}
+.pagination ul li#page a {
+	text-decoration: underline;
+}
+.paginationSummary {
+	float: left;
+	color: #999;
+	margin-bottom: 3px;
+}
