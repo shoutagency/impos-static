@@ -76,4 +76,9 @@ window.addEvent('domready',function() {
 			featuredTestimonials[currentTestimonial].fade('in');
 		}
 	}
+	
+	new Request.HTML({
+		url: siteAddress+'home/getLatestTweet',
+		update: $('homeTwitter').getElement('div > p')
+	}).send();
 });

@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'HelveticaNeueLTPro77BdCn';
     src: url('../fonts/helveticaneueltpro-bdcn-webfont.eot');
-    src: url('../fonts/helveticaneueltpro-bdcn-webfont.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/helveticaneueltpro-bdcn-webfont.eot@') format('embedded-opentype'),
          url('../fonts/helveticaneueltpro-bdcn-webfont.woff') format('woff'),
          url('../fonts/helveticaneueltpro-bdcn-webfont.ttf') format('truetype'),
          url('../fonts/helveticaneueltpro-bdcn-webfont.svg') format('svg');
@@ -12,7 +12,7 @@
 @font-face {
     font-family: 'HelveticaNeueLTPro47LtCn';
     src: url('../fonts/helveticaneueltpro-ltcn-webfont.eot');
-    src: url('../fonts/helveticaneueltpro-ltcn-webfont.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/helveticaneueltpro-ltcn-webfont.eot@') format('embedded-opentype'),
          url('../fonts/helveticaneueltpro-ltcn-webfont.woff') format('woff'),
          url('../fonts/helveticaneueltpro-ltcn-webfont.ttf') format('truetype'),
          url('../fonts/helveticaneueltpro-ltcn-webfont.svg') format('svg');
@@ -23,7 +23,7 @@
 @font-face {
     font-family: 'HelveticaNeueLTPro75Bold';
     src: url('../fonts/helveticaneueltpro-bd-webfont.eot');
-    src: url('../fonts/helveticaneueltpro-bd-webfont.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/helveticaneueltpro-bd-webfont.eot@') format('embedded-opentype'),
          url('../fonts/helveticaneueltpro-bd-webfont.woff') format('woff'),
          url('../fonts/helveticaneueltpro-bd-webfont.ttf') format('truetype'),
          url('../fonts/helveticaneueltpro-bd-webfont.svg') format('svg');
@@ -34,7 +34,7 @@
 @font-face {
     font-family: 'HelveticaNeueLTPro55Roman';
     src: url('../fonts/helveticaneueltpro-roman-webfont.eot');
-    src: url('../fonts/helveticaneueltpro-roman-webfont.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/helveticaneueltpro-roman-webfont.eot@') format('embedded-opentype'),
          url('../fonts/helveticaneueltpro-roman-webfont.woff') format('woff'),
          url('../fonts/helveticaneueltpro-roman-webfont.ttf') format('truetype'),
          url('../fonts/helveticaneueltpro-roman-webfont.svg') format('svg');
@@ -46,7 +46,7 @@
 @font-face {
     font-family: 'HelveticaNeueLTPro45Light';
     src: url('../fonts/helveticaneueltpro-lt-webfont.eot');
-    src: url('../fonts/helveticaneueltpro-lt-webfont.eot%3F') format('embedded-opentype'),
+    src: url('../fonts/helveticaneueltpro-lt-webfont.eot@') format('embedded-opentype'),
          url('../fonts/helveticaneueltpro-lt-webfont.woff') format('woff'),
          url('../fonts/helveticaneueltpro-lt-webfont.ttf') format('truetype'),
          url('../fonts/helveticaneueltpro-lt-webfont.svg') format('svg');

@@ -29,8 +29,6 @@ function codeAddress(address, node) {
 				map: map[node],
 				position: results[0].geometry.location
 			});
-		} else {
-			alert("Geocode was not successful for the following reason: " + status);
 		}
 	});
 }
@@ -51,6 +49,7 @@ window.addEvent("domready", function() {
 	Object.each(addresses, function(address, node) {
 		mapHolder = node.toInt();
 		initialize('mapHolder-'+node, node);
+		if(address)
 		codeAddress(address, node);
 	});
 });
